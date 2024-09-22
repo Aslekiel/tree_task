@@ -1,0 +1,97 @@
+:root {
+  --gallery: #f0f0f0;
+  --white: #fff;
+  --mine-shaft: #333;
+  --silver: #ccc;
+  --azureRadiance: #007bff;
+  --endeavour: #0056b3;
+  --alabaster: #f8f8f8;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Arial, sans-serif;
+  background-color: var(--gallery);
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.main {
+  max-width: 50vw;
+  width: 100%;
+  background-color: var(--white);
+  border-radius: 8px;
+  padding: 20px;
+  text-align: center;
+}
+
+.title {
+  margin-bottom: 20px;
+  color: var(--mine-shaft);
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#tree-input {
+  padding: 10px;
+  border: 1px solid var(--silver);
+  border-radius: 4px;
+  font-size: 16px;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--azureRadiance);
+  color: var(--white);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--endeavour);
+  transition: all 0.3s ease;
+}
+
+#tree {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: baseline;
+  margin-top: 20px;
+  padding: 10px;
+  background-color: var(--alabaster);
+  border: 1px solid var(--silver);
+  border-radius: 4px;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 14px;
+}
+
+#tree:empty {
+  display: none;
+}
+
+.tree-item {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: flex-start;
+  align-items: baseline;
+}
+
+.tree-item__row {
+  margin: 0;
+}
+
+.error-message {
+  font-size: 16px;
+  font-family: "Courier New", Courier, monospace;
+}
